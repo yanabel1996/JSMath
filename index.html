@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // root of square
+        let squareRoot = Math.sqrt(2);
+        const diagonalSquare = (side) => side * squareRoot;
+        diagonalSquare(9);
+
+        // are of triangle
+        const areaOfTriangle = function (a, b, c) {
+            const perimeter = a + b + c;
+            const semiperimeter = perimeter / 2;
+            return Math.sqrt(semiperimeter * (semiperimeter - a) * (semiperimeter - b) * (semiperimeter - c));
+        }
+
+        areaOfTriangle(5, 6, 7);
+
+        // surface and circum of circle
+
+        const pi = Math.PI;
+
+        const surfaceOfCircle = (radius) => pi * (radius ** 2);
+        const circumferenceOfCircle = (radius) => 2 * pi * radius;
+
+        surfaceOfCircle(4);
+        circumferenceOfCircle(4);
+    </script>
+</body>
+
+</html>
